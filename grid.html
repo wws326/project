@@ -6,29 +6,20 @@
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <input type="button" value="Dark mode" onclick="
-    document.querySelector('body').style.backgroundColor = 'black';
-    document.querySelector('body').style.color = 'white';
-    document.querySelector('a.heading').style.color = 'white';
-    ">
-    <input type="button" value="Light mode" onclick="
-    document.querySelector('body').style.backgroundColor = 'white';
-    document.querySelector('body').style.color = 'black';
-    document.querySelector('a.heading').style.color = 'black';
-    ">
-    <!-- the goal is to make a button that turns the screen to dark or light mode-->
-    <input id="dark_light" type="button" value="Dark mode" onclick="
-      if(document.querySelector("#dark_light").value === "Dark mode"){
-        document.querySelector('body').style.backgroundColor = 'black';
-        document.querySelector('body').style.color = 'white';
-        document.querySelector('a.heading').style.color = 'white';
-      } else(){
-        document.querySelector('body').style.backgroundColor = 'white';
-        document.querySelector('body').style.color = 'black';
-        document.querySelector('a.heading').style.color = 'black';
-      }
-    ">
     <div id="structure"><a href="/Users/carsonwi/Documents/GitHub/project/grid.html" class="heading">Daily Carson</a></div>
+    <input id="night_day" type="button" value="night" onclick="
+    if(document.querySelector('#night_day').value === 'night'){
+      document.querySelector('body').style.backgroundColor = 'black';
+      document.querySelector('body').style.color = 'white';
+      document.querySelector('a.heading').style.color = 'white';
+      document.querySelector('#night_day').value = 'day';
+    } else {
+      document.querySelector('body').style.backgroundColor = 'white';
+      document.querySelector('body').style.color = 'black';
+      document.querySelector('a.heading').style.color = 'black';
+      document.querySelector('#night_day').value = 'night';
+    }
+    ">
       <div id="separate">
         <div class="navigation">
           <ol>

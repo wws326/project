@@ -20,11 +20,11 @@ body{
 .content{
   padding: 15px;
 }
-a {
+a{
   color: black;
   text-decoration: none;
 }
-a:hover {
+a:hover{
   color: hotpink;
   text-decoration: underline;
 }
